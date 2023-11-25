@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/round"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="Advanced Filters"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/catTxt"
+                        android:layout_width="95dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Category"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/catcolon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/catTxt"
+                        android:text=":  "
+                        android:textColor="@color/colorPrimary" />
+
+                    <ListView
+                        android:id="@+id/catList"
+                        android:layout_width="95dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/catcolon"
+                        android:divider="@null"
+                        android:gravity="left"
+                        android:spinnerMode="dialog"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="#9B9899" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadeScrollbars="false"
+                    android:isScrollContainer="true"
+                    android:scrollbarSize="@dimen/_5dp"
+                    android:scrollbars="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/amounttxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="Amount"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/colon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/amounttxt"
+                                android:text=":  "
+                                android:textColor="@color/colorPrimary" />
+
+
+                            <Spinner
+                                android:id="@+id/amounttxtspin"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/colon"
+                                android:background="@drawable/border_spinner"
+                                android:gravity="left"
+                                android:spinnerMode="dialog"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/amounttxtvalue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@+id/amounttxtspin"
+                                android:ellipsize="end"
+                                android:hint="Enter Amount"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/dtrcodeTxt"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="DTR Code"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/dtrcodecolon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/dtrcodeTxt"
+                                android:text=":  "
+                                android:textColor="@color/colorPrimary" />
+
+                            <com.apcpdcl.departmentapp.customviews.MultiSelectSpinner
+                                android:id="@+id/dtrcodespinner"
+                                android:layout_width="105dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/dtrcodecolon"
+                                android:background="@drawable/border_spinner"
+                                android:gravity="left"
+                                android:spinnerMode="dialog"
+                                android:textSize="14sp" />
+                        </RelativeLayout>   <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_pole"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Pole No"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/polecolon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/tv_pole"
+                                android:text=":  "
+                                android:textColor="@color/colorPrimary" />
+
+                            <com.apcpdcl.departmentapp.customviews.MultiSelectSpinner
+                                android:id="@+id/pole_spinner"
+                                android:layout_width="105dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/polecolon"
+                                android:background="@drawable/border_spinner"
+                                android:gravity="left"
+                                android:spinnerMode="dialog"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/socialcat_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/socialcattxt"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Social Category"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/socialcolon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/socialcattxt"
+                                android:text=":  "
+                                android:textColor="@color/colorPrimary" />
+
+                            <com.apcpdcl.departmentapp.customviews.MultiSelectSpinner
+                                android:id="@+id/socialcattxtspinner"
+                                android:layout_width="105dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/socialcolon"
+                                android:background="@drawable/border_spinner"
+                                android:gravity="left"
+                                android:paddingStart="@dimen/_10dp"
+                                android:paddingLeft="@dimen/_5dp"
+                                android:spinnerMode="dialog"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/servicetypetxt"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="ServiceType"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/servicecolon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/servicetypetxt"
+                                android:text=":  "
+                                android:textColor="@color/colorPrimary" />
+
+                            <Spinner
+                                android:id="@+id/servicetxtspinner"
+                                android:layout_width="105dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/servicecolon"
+                                android:background="@drawable/border_spinner"
+                                android:gravity="left"
+                                android:spinnerMode="dialog"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/govtcodetxt"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Govt Code"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/govtcodecolon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/govtcodetxt"
+                                android:text=":  "
+                                android:textColor="@color/colorPrimary" />
+
+                            <com.apcpdcl.departmentapp.customviews.MultiSelectSpinner
+                                android:id="@+id/govtcodespinner"
+                                android:layout_width="105dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/govtcodecolon"
+                                android:background="@drawable/border_spinner"
+                                android:gravity="left"
+                                android:spinnerMode="dialog"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/discdatetxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Disconnection Date"
+                                android:paddingTop="@dimen/_5dp"
+                                android:paddingBottom="@dimen/_10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:text="From "
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="14sp" />
+
+                                    <Spinner
+                                        android:id="@+id/discdatespinner"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="3"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/border_spinner"
+                                        android:spinnerMode="dialog"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:text="  To  "
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="14sp" />
+
+                                    <Spinner
+                                        android:id="@+id/discdatespinner_to"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="3"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/border_spinner"
+                                        android:spinnerMode="dialog"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/groupTxt"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Group"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/groupcolon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/groupTxt"
+                                android:text=":  "
+                                android:textColor="@color/colorPrimary" />
+
+                            <com.apcpdcl.departmentapp.customviews.MultiSelectSpinner
+                                android:id="@+id/groupspinner"
+                                android:layout_width="105dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/groupcolon"
+                                android:background="@drawable/border_spinner"
+                                android:gravity="left"
+                                android:spinnerMode="dialog"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/dialogsubmitbtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="36dp"
+                                android:layout_margin="15dp"
+                                android:background="@color/colorPrimary"
+                                android:text="Submit"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialogclosebtn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="top|right"
+        android:src="@drawable/ic_close"
+        android:tint="@color/colorPrimary"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true" />
+</FrameLayout>

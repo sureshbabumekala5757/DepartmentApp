@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#fff"
+            android:textSize="@dimen/_17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_exception"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_down" />
+
+    </RelativeLayout>
+
+    <com.apcpdcl.departmentapp.customviews.ExpandableRelativeLayout
+        android:id="@+id/el_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#FFF"
+        app:ael_duration="300"
+        app:ael_expanded="true"
+        app:ael_interpolator="linear">
+
+        <ListView
+            android:id="@+id/lv_service_numbers"
+            android:layout_width="match_parent"
+            android:divider="@android:color/transparent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100dp"
+            android:text="0 Records Found"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_16sp"
+            android:id="@+id/tv_not_found"
+            android:background="@drawable/round"/>
+
+    </com.apcpdcl.departmentapp.customviews.ExpandableRelativeLayout>
+</LinearLayout>

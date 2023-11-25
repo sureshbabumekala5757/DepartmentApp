@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:local="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/iv_notifications"
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_notification"
+
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ae_dashboard_title"
+                android:textAllCaps="true"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@+id/container_toolbar"
+        android:alpha="0.7"
+        android:background="#FFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/container_toolbar"
+        android:layout_margin="@dimen/_15dp"
+        android:background="@color/homebackground_color">
+
+
+        <RelativeLayout
+            android:id="@+id/designation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dp"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:minHeight="@dimen/_50dp"
+                android:padding="@dimen/_5dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_todo"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_10dp"
+                    android:text="Reports"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tarif_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_dashboard"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:minHeight="@dimen/_50dp"
+                android:padding="@dimen/_5dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_todo"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_10dp"
+                    android:text="@string/tariff_plan"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_16sp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_tarif_plan"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_15dp"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_dc_operations"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp">
+
+                            <ImageView
+                                android:id="@+id/iv_dc_operations"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="@dimen/_35dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/disconnected" />
+
+                            <TextView
+                                android:id="@+id/tv_dc_operations"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/dc_operations"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_meter_change"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_meter_change"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="@dimen/_35dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/electric_meter" />
+
+                            <TextView
+                                android:id="@+id/tv_meter_change"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/meter_change_requests"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_aadhaar"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp">
+
+                            <ImageView
+                                android:id="@+id/iv_aadhaar"
+                                android:layout_width="@dimen/_40dp"
+                                android:layout_height="@dimen/_40dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/smartphone" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_40dp"
+                                android:layout_height="@dimen/_40dp"
+                                android:layout_marginTop="-25dp"
+                                android:layout_marginRight="-25dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/aadhar"
+                                android:visibility="gone" />
+
+
+                            <TextView
+                                android:id="@+id/tv_aadhaar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/aadhaar_and_mobile"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_chk_request"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_chk_request"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="@dimen/_35dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/ic_receipt" />
+
+                            <TextView
+                                android:id="@+id/tv_chk_request"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/check_request"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_new_req"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp">
+
+                            <ImageView
+                                android:id="@+id/iv_new_req"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="37dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/ic_meter" />
+
+                            <TextView
+                                android:id="@+id/tv_new_req"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/new_services"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_ccc_complaints"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp">
+
+                            <ImageView
+                                android:id="@+id/iv_ccc_complaints"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="@dimen/_35dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/complaints_book" />
+
+                            <TextView
+                                android:id="@+id/tv_ccc_complaints"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/ccc_complaints"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_geo_tagging"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp">
+
+                            <ImageView
+                                android:id="@+id/iv_geo_tagging"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="@dimen/_35dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/geo_tagging" />
+
+                            <TextView
+                                android:id="@+id/tv_geo_tagging"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/agl_services_geo_tagging"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_service_details"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_service_details"
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/service_details" />
+
+                            <TextView
+                                android:id="@+id/tv_service_details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/service_details"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_to_be"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_to_be"
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/ic_new_meter" />
+
+                            <TextView
+                                android:id="@+id/tv_to_be"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="New Connections To Be Released"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_feeder"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_feeder"
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/ic_outage"
+                                android:tint="@color/homebackground_color" />
+
+                            <TextView
+                                android:id="@+id/tv_feeder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Feeder Outages"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_dc_operations_mats"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp">
+
+                            <ImageView
+                                android:id="@+id/iv_dc_operations_mats"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="@dimen/_35dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/disconnected" />
+
+                            <TextView
+                                android:id="@+id/tv_dc_operations_mats"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/mats_dc_operations"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_interruptions"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_interruptions"
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/ic_interrupt" />
+
+                            <TextView
+                                android:id="@+id/tv_interruptions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Interruptions Report"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_eeps"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_eeps"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="@dimen/_35dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/ic_eeps" />
+
+                            <TextView
+                                android:id="@+id/tv_eeps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="EEPS List"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_survey"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_survey"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="@dimen/_35dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/ic_survey" />
+
+                            <TextView
+                                android:id="@+id/tv_survey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="PMI"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_seal_bits"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_seal_bits"
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/electric_meter" />
+
+                            <TextView
+                                android:id="@+id/tv_seal_bits"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/seal_bits"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_lc_operations"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/iv_lc_operations"
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/icon_lc"
+                                android:tint="@color/homebackground_color" />
+
+                            <TextView
+                                android:id="@+id/tv_lc_operations"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/lc_operations"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_tong_tester"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp">
+
+                            <ImageView
+                                android:id="@+id/iv_tong_tester"
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/ic_transformer" />
+
+                            <TextView
+                                android:id="@+id/tv_tong_tester"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/tong_tester"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_Add_pole_data"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp">
+
+                            <ImageView
+                                android:id="@+id/iv_add_pole_data"
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/icon_lc" />
+
+                            <TextView
+                                android:id="@+id/tv_add_pole_data"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/add_pole_data"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_ctmeters"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_ctmeters"
+                                android:layout_width="@dimen/_35dp"
+                                android:layout_height="@dimen/_35dp"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/electric_meter" />
+
+                            <TextView
+                                android:id="@+id/tv_ctmeters"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/ct_meters"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/powered_by_apcpdcl"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</RelativeLayout>

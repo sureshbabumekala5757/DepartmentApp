@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3747a4</color>
+    <color name="text_color">#171717</color>
+    <color name="homebackground_color">#B2E0FE</color>
+    <color name="achievers_bg">#4DB2E0FE</color>
+    <color name="dark_gray">#939494</color>
+    <color name="green_color">#0AB111</color>
+    <color name="red_color">#EA5656</color>
+    <color name="light_color">#C6C5C5</color>
+    <color name="transparant">#00000000</color>
+    <color name="white">#fff</color>
+</resources>
+
+<!--#FF4081-->

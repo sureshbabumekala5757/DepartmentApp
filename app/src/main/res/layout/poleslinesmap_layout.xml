@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- <LinearLayout
+         android:id="@+id/container_toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+         <android.support.v7.widget.Toolbar xmlns:local="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="?attr/colorPrimary"
+             android:minHeight="?attr/actionBarSize"
+             local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+             local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+             <ImageView
+                 android:layout_width="42dp"
+                 android:layout_height="42dp"
+                 android:layout_centerHorizontal="true"
+                 android:contentDescription="@string/app_name"
+                 android:src="@drawable/white" />
+
+             <TextView
+                 android:id="@+id/toolbar_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:text="@string/app_name"
+                 android:textAllCaps="true"
+                 android:textColor="#FFF"
+                 android:textSize="18sp"
+                 android:textStyle="bold" />
+
+         </android.support.v7.widget.Toolbar>
+     </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_above="@+id/footer"
+         android:layout_below="@+id/container_toolbar"
+         android:orientation="vertical"
+         android:weightSum="2">
+
+
+         <TextView
+             android:id="@+id/poles_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:text="Poles"
+             android:textAllCaps="true"
+             android:textColor="@color/colorPrimary"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+
+         <com.esri.arcgisruntime.mapping.view.MapView
+             android:id="@+id/polesmapView"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_margin="10dp"
+             android:layout_weight="1" />
+
+         <TextView
+             android:id="@+id/poles_count"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="left"
+             android:text=""
+             android:layout_margin="10dp"
+             android:textColor="@color/colorPrimary"
+             android:textSize="16sp" />
+
+         <TextView
+             android:id="@+id/dtrs_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:text="DTRS"
+             android:textAllCaps="true"
+             android:textColor="@color/colorPrimary"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+
+         <com.esri.arcgisruntime.mapping.view.MapView
+             android:id="@+id/dtrsmapView"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_margin="10dp"
+             android:layout_weight="1" />
+
+         <TextView
+             android:id="@+id/dtrs_count"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="left"
+             android:text=""
+             android:layout_margin="10dp"
+             android:textColor="@color/colorPrimary"
+             android:textSize="16sp" />
+
+         <Button
+             android:id="@+id/submitmapbtn"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:layout_gravity="center_horizontal"
+             android:layout_margin="10dp"
+             android:layout_marginTop="@dimen/_20dp"
+             android:background="@color/colorPrimary"
+             android:padding="3dp"
+             android:text="Submit"
+             android:textAllCaps="false"
+             android:textColor="#FFF" />
+
+     </LinearLayout>
+
+
+     <RelativeLayout
+         android:id="@+id/footer"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:background="@color/colorPrimary"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:padding="7dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/powered_by_apcpdcl"
+             android:textColor="@android:color/white"
+             android:textSize="14sp" />
+     </RelativeLayout>-->
+</RelativeLayout>

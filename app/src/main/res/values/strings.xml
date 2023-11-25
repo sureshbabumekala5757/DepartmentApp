@@ -1,0 +1,533 @@
+<resources>
+    <string name="app_name">Department App</string>
+    <string name="ae_dashboard_title">APCPDCL DepartmentApp</string>
+    <string name="tariff_plan">Tariff Plan 2022-23</string>
+    <string name="default_notification_channel_id">default</string>
+    <string name="action_changepassword">Change Password</string>
+    <string name="action_logout">Logout</string>
+    <string name="kvah">KVAH</string>
+    <string name="kvah_exp">EXP KVAH</string>
+    <string name="kwh_exp">EXP KWH</string>
+    <string name="dctype">Disconnection Type</string>
+    <string name="dckwh">KWH</string>
+    <string name="mandatory">mandatory fields</string>
+    <string name="details"><font color="red">V</font>-Payment <font color="red">V</font>erified\n<font color="red">P</font>-<font color="red">P</font>ending for Verification\n<font color="red">D</font>-<font color="red">D</font>isconnected\n<font color="red">N</font>-Unable(<font color="red">N</font>ot able) to Disconnect.</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="update">Update</string>
+    <string name="section_name">Section Name</string>
+    <string name="no_internet">This feature requires internet connection. Please check your internet settings and try again.</string>
+    <string name="err_session">Unable to create session.</string>
+    <string name="no_geocoder_available">No Geo coder available</string>
+    <string name="turn_on_location">Turn On Location</string>
+    <string name="ccc_complaints">CCC\nComplaints</string>
+
+    <string name="err_enter_meter_change_date">Meter Change Date cannot be empty.</string>
+    <string name="err_enter_service_number">Service Number cannot be empty.</string>
+    <string name="err_enter_valid_service_number">Enter valid Service Number.</string>
+    <string name="err_enter_old_meter_number">Old Meter number cannot be empty.</string>
+    <string name="err_enter_old_meter_kwh_reading">Old Meter KWH reading cannot be empty.</string>
+    <string name="err_enter_old_meter_kwh_exp_reading">Old Meter EXP KWH reading cannot be empty.</string>
+    <string name="err_enter_old_meter_kvah_exp_reading">Old Meter EXP KVAH reading cannot be empty.</string>
+    <string name="err_enter_old_meter_kvah_reading">Old Meter KVAH reading caannot be empty.</string>
+    <string name="err_enter_valid_old_meter_number">Please verify the Old meter number in the meter change slip.</string>
+    <string name="err_old_meter_number_lees_than_five">Old Meter Number should be atleast 5 digits length.</string>
+    <string name="err_select_meter_change_date_first">Please Select Meter Change Date first.</string>
+    <string name="err_final_reading_cant_be_less_kwh">Old meter final reading cannot be less than old meter closing reading(KWH).</string>
+    <string name="err_final_reading_cant_be_less_kvah">Old meter final reading cannot be less than old meter closing reading(KVAH).</string>
+
+    <string name="err_final_reading_cant_be_less_exp_kwh">Old meter final reading cannot be less than old meter closing reading(EXP KWH).</string>
+    <string name="err_final_reading_cant_be_less_exp_kvah">Old meter final reading cannot be less than old meter closing reading(EXP KVAH).</string>
+
+    <string name="err_select_meter_change_reason">Please Select Meter change reason.</string>
+    <string name="err_select_irda_flag">Please Select IRDA Flag.</string>
+    <string name="err_select_new_meter_make">Please Select New Meter Make.</string>
+    <string name="err_select_new_meter_type">Please Select New Meter Type.</string>
+    <string name="err_select_new_meter_phase">Please Select New Meter Phase.</string>
+    <string name="err_meter_change_slip_number_cant_be_empty">Meter Change Slip Number cannot be empty.</string>
+    <string name="err_new_meter_number_cant_be_empty">New Meter number caannot be empty.</string>
+    <string name="err_valid_new_meter_number">New Meter number should be atleast 5 digits length.</string>
+    <string name="err_enter_valid_new_meter_number">New Meter number caannot be same as Old Meter number.</string>
+    <string name="err_new_meter_make_cant_be_empty">New Meter Make caannot be empty.</string>
+    <string name="err_new_meter_capacity_cant_be_empty">New Meter Capacity caannot be empty.</string>
+    <string name="err_new_meter_class_cant_be_empty">New Meter Class caannot be empty.</string>
+    <string name="err_meter_digits_cant_be_empty">Meter Digits caannot be empty.</string>
+    <string name="err_enter_meter_manufacture_date">Meter Manufacture Date cannot be empty.</string>
+    <string name="err_enter_meter_reading_kwh">New Meter KWH reading be empty.</string>
+    <string name="err_enter_meter_reading_kvah">New Meter KVAH reading caannot be empty.</string>
+    <string name="err_enter_meter_mf">New Meter MF caannot be empty.</string>
+    <string name="err_enter_valid_meter_mf">MF caannot be zero.</string>
+    <string name="err_enter_meter_seal_one">MRT Seal-1 cannot be empty.</string>
+    <string name="err_enter_meter_seal_tc">Meter Terminal Cover Seal cannot be empty.</string>
+    <string name="err_enter_meter_seal_two">MRT Seal-2 cannot be empty.</string>
+    <string name="err_enter_meter_change_reason">Please Enter meter change reason.</string>
+    <string name="enter_meter_change_reason">Enter Meter Change reason</string>
+    <string name="enter_lc_reason">Enter Reason for LC </string>
+    <string name="meter_change_slip_no">Meter Change Slip No</string>
+    <string name="meter_change_date">Meter Change Date</string>
+    <string name="old_meter_number">Old Meter Number</string>
+    <string name="final_reading_kwh">(Final Reading)KWH</string>
+    <string name="final_reading_kvah">(Final Reading)KVAH</string>
+    <string name="final_reading_exp_kwh">(Final Reading) EXP KWH</string>
+    <string name="final_reading_exp_kvah">(Final Reading) EXP KVAH</string>
+    <string name="changed_by">Changed By</string>
+    <string name="logged_in_user">Logged in user</string>
+    <string name="irda">IRDA</string>
+    <string name="meter_make">Meter Make</string>
+    <string name="meter_type">Meter Type</string>
+    <string name="_2_electron">2-ELECTRON</string>
+    <string name="new_meter_no">New Meter No</string>
+    <string name="meter_phase">Meter Phase</string>
+    <string name="meter_capacity">Meter Capacity</string>
+    <string name="meter_class">Meter Class</string>
+    <string name="meter_description">Meter Description</string>
+    <string name="meter_digits">Meter Digits</string>
+    <string name="meter_mfg_date_in_ddmmyy_format_eg_100314">Meter Mfg Date (In ddmmyy format)eg:100314</string>
+    <string name="initial_reading_kwh">(Initial Reading)KWH</string>
+    <string name="initial_reading_kvah">(Initial Reading)KVAH</string>
+    <string name="mf">MF</string>
+    <string name="meter_cover_seals_mrt_seals_are_mandatory">Meter Cover Seals (MRT) ( * Seals are mandatory)</string>
+    <string name="seal_1">*Seal 1</string>
+    <string name="meter_tc_seals">Meter TC Seals</string>
+    <string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="you_pressed_cancel">You pressed Cancel!</string>
+    <string name="no_internet_msg">Internet connection not available, Do you want to proceed Offline?</string>
+
+    <string name="pending_o_m_list">Pending Meter Changes</string>
+    <string name="delete_list">Delete Meter Changes</string>
+    <string name="agl_services_geo_tagging">AGL Services GEO Tagging</string>
+    <string name="sub_station_operations">Sub-Station\nCo-ordinates</string>
+    <string name="meter_change_requests">Meter Change Requests</string>
+    <string name="str_operate_dc_list">Operate DC-List</string>
+    <string name="meter_change_operations">Meter Change Requests</string>
+    <string name="rejected_by_aao_list">Exception List</string>
+    <string name="delete_meter_change">Delete Meter Changes</string>
+    <string name="meter_changes_list">METER CHANGES LIST</string>
+    <string name="search">Search</string>
+    <string name="delete">Delete</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="dc_operations">DC\nOperations</string>
+    <string name="str_dc_operations">DC Operations</string>
+    <string name="meter_change_details">METER CHANGE DETAILS</string>
+    <string name="old_meter_closing_reading_status">Old Meter Closing Reading Status</string>
+    <string name="old_meter_closing_reading_date">Old Meter Closing Reading Date</string>
+    <string name="old_meter_closing_reading_kvah">Old Meter Closing Reading(KVAH)</string>
+    <string name="old_meter_closing_reading_kwh">Old Meter Closing Reading (KWH)</string>
+    <string name="bill_details">Bill Details</string>
+    <string name="bill_last_details">Last Billed Readings</string>
+    <string name="meter_mf">Meter MF</string>
+    <string name="meter_details">Meter Details</string>
+    <string name="dtr_code">DTR Code</string>
+    <string name="sub_category">Sub-Category</string>
+    <string name="category">Category</string>
+    <string name="cycle">Cycle</string>
+    <string name="meter_inspection">Meter Inspection</string>
+    <string name="ib_value">IB Value</string>
+    <string name="ib">IB</string>
+    <string name="ir_value">IR Value</string>
+    <string name="ir">IR</string>
+    <string name="iy_value">IY Value</string>
+    <string name="iy">IY</string>
+    <string name="bn_value">bn Value</string>
+    <string name="bn">BN</string>
+    <string name="yn_value">YN Value</string>
+    <string name="yn">YN</string>
+    <string name="rn_value">RN Value</string>
+    <string name="rn">RN</string>
+    <string name="br_value">BR Value</string>
+    <string name="br">BR</string>
+    <string name="yb_value">YB Value</string>
+    <string name="yb">YB</string>
+    <string name="ry_value">RY Value</string>
+    <string name="ry">RY</string>
+    <string name="service_number">Service Number</string>
+    <string name="bp_number">BP Number</string>
+    <string name="fetch">Fetch</string>
+    <string name="enetr_valid_scno">Please Enter Valid Service Number.</string>
+    <string name="select_mtr_type">Please Select Meter Type.</string>
+    <string name="meter_detail">Details</string>
+    <string name="meter_display_parameters">Meter Display Parameters</string>
+    <string name="meter_particulars">Meter Name Plate Details</string>
+    <string name="submit">Submit</string>
+    <string name="designation">Designation</string>
+    <string name="distribution">Distribution</string>
+    <string name="name_and_address_of_the_consumer">Name and Address of the Consumer</string>
+    <string name="inspection_details">Inspection Details</string>
+    <string name="inspection_date">Inspection Date</string>
+    <string name="meter_make_value">Make Value</string>
+    <string name="mdmf_value">MDMF Value</string>
+    <string name="mdmf">MDMF</string>
+    <string name="mf_value">MF Value</string>
+    <string name="manufacture">Year Of Manufacture</string>
+    <string name="meter_readings">Meter Readings</string>
+    <string name="kwh">KWH</string>
+    <string name="kwh_value">KWH Value</string>
+    <string name="kvah_TXT">KVAH</string>
+    <string name="kvah_value">KVAH Value</string>
+    <string name="kvarh_lag_value">KVARH(Lag) Value</string>
+    <string name="kvarh_lag">KVARH(Lag)</string>
+    <string name="kvarh_lead">KVARH(Lead)</string>
+    <string name="kvarh_lead_value">KVARH(Lead) Value</string>
+    <string name="rmd">RMD</string>
+    <string name="rmd_value">RMD Value</string>
+    <string name="voltage_and_current_at_test_terminal_blocks">Voltage And Current At Test Terminal Blocks</string>
+    <string name="mtr_chng_details">Meter Change Details</string>
+    <string name="whether_meter_is_changed_during_inspection">Whether Meter is Changed During Inspection</string>
+    <string name="whether_ct_pt_meter_is_changed_during_inspection">Whether CT/PT Meter is Changed During Inspection</string>
+    <string name="incriminating_points_observed_at_the_of_inspection">Incriminating Points Observed At The of Inspection</string>
+    <string name="enter_the_incriminating_points_observed_at_the_time_of_inspection">Enter the Incriminating Points Observed at the time of Inspection</string>
+    <string name="enter_percentage_error">Enter percentage Error</string>
+    <string name="enter_percentage_error_value">Enter percentage Error Value</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="choose_file">Choose File</string>
+    <string name="whether_ct_pt_is_changed_during_inspection">Whether CT/PT is Changed During Inspection</string>
+    <string name="ct_pt_name_plate_details">CT/PT Name Plate Details</string>
+    <string name="make">Make</string>
+    <string name="sl_no">Sl.NO</string>
+    <string name="sl_no_value">Sl.NO Value</string>
+    <string name="capacity">Capacity</string>
+    <string name="capacity_value">Capacity Value</string>
+    <string name="pt_ratio_value">PT Ratio Value</string>
+    <string name="pt_ratio">PT Ratio</string>
+    <string name="ct_ratio_value">CT Ratio Value</string>
+    <string name="ct_ratio">CT Ratio</string>
+    <string name="capture_meter_image">Capture Meter Image</string>
+    <string name="consumer_digital_signature">Consumer Digital Signature</string>
+    <string name="dialog_title">SIGN HERE</string>
+    <string name="hint_cancel">Cancel</string>
+    <string name="hint_clear">Clear</string>
+    <string name="hint_save">Save</string>
+    <string name="check_request">Check\nReading</string>
+    <string name="aadhaar_and_mobile">Consumer Mobile Updation</string>
+    <string name="new_services">New Connection Release</string>
+    <string name="pending_registrations">Pending Registrations</string>
+    <string name="tong_tester">Tong Tester</string>
+    <string name="search_to_tag_location">Search To Tag Location</string>
+    <string name="edit_tagged_location">Edit Tagged Location</string>
+    <string name="pending_services">Pending Services</string>
+    <string name="tagg_location">TAG LOCATION</string>
+    <string name="check_reading_str">Check Reading</string>
+    <string name="transformer_tong_tester">Transformer Tong Tester</string>
+    <string name="add_sub_station_coordinates">Add Sub-Station Coordinates</string>
+    <string name="register_shift_operators">Register Shift Operators</string>
+    <string name="service_type">Service Type</string>
+    <string name="slab">Slab</string>
+    <string name="non_slab">Non Slab</string>
+    <string name="abstract_list">Abstract List</string>
+    <string name="check_reading_underline">Check Reading</string>
+    <string name="feeder_readings">Feeder Readings</string>
+    <string name="feeder_lv_readings">Feeder and LV Readings</string>
+    <string name="search_registration">Search Registration</string>
+    <string name="edit_registration">Edit Registration</string>
+    <string name="new_request">New Request</string>
+    <string name="new_services_tag_location">NEW SERVICES-TAG LOCATION</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="consumer_name">Consumer Name</string>
+    <string name="category_type">Category Type</string>
+    <string name="load">Load</string>
+    <string name="address">Address</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="get_details">Get Details</string>
+    <string name="enter_csc_registration_number_to_get_details">Enter CSC Registration Number to get details</string>
+    <string name="powered_by_apcpdcl">Powered By APCPDCL</string>
+    <string name="enter_user_name">Enter User Name Details</string>
+    <string name="user_name">User Name</string>
+    <string name="user_otp">OTP</string>
+    <string name="user_password">Password</string>
+    <string name="user_cnf_password">Confirm Password</string>
+    <string name="new_meter_number">New Meter Number</string>
+    <string name="kwh_units">KWH Units</string>
+    <string name="units">Units</string>
+    <string name="kvah_units">KVAH Units</string>
+    <string name="approve">Approve</string>
+    <string name="tag_location">Tag Location</string>
+    <string name="service_details">Service Details</string>
+    <string name="section">Section</string>
+    <string name="ero_name">ERO Name</string>
+    <string name="last_paid_amount">Last Paid Amount</string>
+    <string name="last_paid_date">Last Paid Date</string>
+    <string name="opening_reading">Opening Reading</string>
+    <string name="closing_reading">Closing Reading</string>
+    <string name="due_date">Due Date</string>
+    <string name="disconnection_date">Disconnection Date</string>
+    <string name="billed_units">Billed Units</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="arrears_amount">Arrears Amount</string>
+    <string name="acd_amount">ACD Amount</string>
+    <string name="bill_date">Bill Date</string>
+    <string name="contract_load">Contract Load</string>
+    <string name="feeder_code">Feeder Code</string>
+    <string name="closing_status">Closing Status</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="irda_flag">IRDA Flag</string>
+    <string name="date_of_supply">Date of Supply</string>
+    <string name="bill_type">Bill Type</string>
+    <string name="meter_number">Meter Number</string>
+    <string name="dtr_location">DTR Location</string>
+    <string name="linked_service_no">Linked Service No.</string>
+    <string name="netamountpayable">NetAmountPayable = </string>
+    <string name="rupee_symbol">₹</string>
+    <string name="google_maps_key">AIzaSyBEctWnq77IvYbcRpiKsvmK4hKJHVx3M2A</string>
+    <string name="current_location_preview">Current Location Preview</string>
+    <string name="dtr_make">DTR Make</string>
+    <string name="dtr_phase">DTR Phase</string>
+    <string name="dtr_serial_no">DTR Serial No.</string>
+    <string name="no_of_lt_feeders">No. of LT Feeders</string>
+    <string name="dtr_action">DTR Action</string>
+    <string name="remarks">Remarks</string>
+    <string name="enter_your_remarks">Enter your remarks here,Not more than 1000 characters</string>
+    <string name="offline_requests">Offline Meter Changes</string>
+    <string name="exception_list">Exception List</string>
+    <string name="oms">OMS</string>
+    <string name="live_interruptions">Live Interruptions</string>
+    <string name="saidi_saifi">Saidi - Saifi</string>
+    <string name="lc_operations">LC Operations</string>
+    <string name="lc_request_form">LC Request Form</string>
+    <string name="lc_return_form">LC Return Form</string>
+    <string name="confirm_lc">Confirm LC</string>
+    <string name="substation_name">Substation Name</string>
+    <string name="feeder_name">Feeder Name</string>
+    <string name="lc_required_date">LC Required Date</string>
+    <string name="lc_from_time">LC From Time</string>
+    <string name="lc_to_time">LC To Time</string>
+    <string name="reason_for_lc">Reason For LC</string>
+    <string name="lc_issued_designation">LC Issued Designation</string>
+    <string name="to_be_filled_by_ss_operator">To be filled by SS Operator</string>
+    <string name="submit_lc">Submit LC</string>
+    <string name="select_date">Select Date</string>
+    <string name="return_lc">Return LC</string>
+    <string name="men_and_material_cleared_from_the_line">Men and Material Cleared from the Line.</string>
+    <string name="ensure_there_is_no_back_feeding">Ensure there is no back feeding.</string>
+    <string name="feeder_outages">Feeder Outages</string>
+    <string name="feeder_operations">Feeder Operations</string>
+    <string name="billing">Billing</string>
+    <string name="exception_report">Exceptional Report</string>
+    <string name="month">Month</string>
+    <string name="status">Status</string>
+    <string name="type">Type</string>
+    <string name="year">Year</string>
+    <string name="reject">Reject</string>
+    <string name="saidi_saifitxt">SAIDI SAIFI</string>
+    <string name="feeder_saidi_saifitxt">Feeder SAIDI SAIFI</string>
+    <string name="total_feeders">TotalFeeders</string>
+    <string name="saifi_no_s">SAIFI\n(No\'s)</string>
+    <string name="saidi_hh_mm_ss">SAIDI\n(HH:MM:SS)</string>
+    <string name="rank">RANK</string>
+    <string name="sections">SectionName</string>
+    <string name="feedername">FeeederName</string>
+    <string name="feeder_type">Feeder Type</string>
+    <string name="cash_count">Cash Count</string>
+    <string name="digital_count">Digital Count</string>
+    <string name="cash_amount">Cash Amount (Lacs)</string>
+    <string name="digital_amount">Digital Amount (Lacs)</string>
+    <string name="subdivision_name">SubDiv Name</string>
+    <string name="digero_name">ERO Name</string>
+    <string name="number_of_scs">Number of SCS</string>
+    <string name="amount_lacs">Amount(Lacs)</string>
+    <string name="not_available">NA</string>
+    <string name="collections">Collections</string>
+    <string name="digital_transactions">Digital Transactions</string>
+    <string name="counterwise_transactions">CounterWise Transactions</string>
+    <string name="dc_list_tracking">DC-List\nTracking</string>
+    <string name="alpha_numeric_digits">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</string>
+    <string name="select_end_date">Select End Date</string>
+    <string name="dtr_structure_survey">DTR Structure Survey</string>
+    <string name="lt_line_survey">LT Line Survey</string>
+    <string name="_11kv_line_survey">11Kv Line Survey</string>
+    <string name="home">Home</string>
+    <string name="call_service"><!--For any queries related to IT, SAP and Telecom wings \n Please contact 7382680554/64/74-->
+        DTR tracking software is moved to Department App. Further assistance call IT call centre :: 9440847 325 / 875</string>
+    <string name="action_version">Version</string>
+    <string name="ht_meter_reading_card">HT Meter\nReading Card</string>
+    <string name="mats_dc_operations">MATS\nDC Operations</string>
+    <string name="load_forecast">Load Forecast</string>
+    <string name="load_forecast_report">Load Forecast Report</string>
+    <string name="main_report">Reports</string>
+    <string name="load_forecast_form">Load Forecast Form</string>
+    <string name="time_period"><u>Time Period</u></string>
+    <string name="consumption_in_kwh"><u>Load(in amps)</u></string>
+    <string name="distribution_code"><b>Distribution Code</b></string>
+    <string name="scno"><b>SCNO</b></string>
+
+
+    <string name="failed_convert">Failed to convert</string>
+    <!--<string name="basemap_url">https://wi.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer</string>-->
+    <string name="location_permission_denied">User denied permission for device location.</string>
+    <!--<item>Supply Failure - HG Fuse Failure</item>-->
+    <string-array name="supply_failure">
+        <item>--Select--</item>
+        <item>Supply Failure - Individual</item>
+        <item>Supply Failure - DTR Failure</item>
+        <item>Supply Failure - Break down</item>
+        <item>Supply Failure - Line Clear</item>
+        <item>Supply Failure - Other</item>
+    </string-array>
+    <!-- Meter Make Array Strings -->
+    <string-array name="meter_make">
+        <item>--Select--</item>
+        <item>AEW</item>
+        <item>ANSU</item>
+        <item>AVENIER</item>
+        <item>AVON</item>
+        <item>CONTI</item>
+        <item>DEVOLUTED</item>
+        <item>DHANA ENRG</item>
+        <item>ECE</item>
+        <item>ELSTER</item>
+        <item>ELYMER</item>
+        <item>GENUS</item>
+        <item>HAVELLS</item>
+        <item>HE</item>
+        <item>HOLLEY</item>
+        <item>HPL</item>
+        <item>ICSA</item>
+        <item>L AND G</item>
+        <item>LNT</item>
+        <item>NPL</item>
+        <item>OMNIAGATE</item>
+        <item>PL EL PWR</item>
+        <item>PT</item>
+        <item>SCHNEIDER</item>
+        <item>SECURE</item>
+        <item>SMS</item>
+        <item>TTL</item>
+        <item>UE</item>
+        <item>UTL</item>
+        <item>VE</item>
+        <item>VISION TEK</item>
+        <item>OTHERS</item>
+    </string-array>
+    <!--Category Type-->
+    <string-array name="category">
+        <item>--Select--</item>
+        <item>LT1</item>
+        <item>LT2</item>
+        <item>LT3</item>
+        <item>LT4</item>
+        <item>LT5</item>
+    </string-array>
+    <!-- Meter Change Str values -->
+    <string name="meter_location">Meter Location</string>
+    <string name="meter_location_in">Inside</string>
+    <string name="meter_location_out">Outside</string>
+    <string name="adl_available">Additional Load Available</string>
+    <string name="theft_mal_notice">Theft/Malpractice Noticed</string>
+    <string name="supply_util">Utilizing Supply in Correct Category</string>
+    <string name="correct_cat">Choose Correct Category</string>
+    <string name="yes_str">Yes</string>
+    <string name="no_str">No</string>
+    <string name="meter_photo">Take Photo of Meter</string>
+    <string name="irda_meter">Is IrDA Meter</string>
+    <!--    Seal bits-->
+    <string name="service_phase">Phase</string>
+    <string name="seal_bits">Meter Seals Update</string>
+    <string name="seal_bits_check">Meter Seals Update</string>
+    <string name="tc_seal_one">TC Seal 1</string>
+    <string name="tc_seal_two">TC Seal 2</string>
+    <string name="box_seal_one">Box Seal 1</string>
+    <string name="box_seal_two">Box Seal 2</string>
+    <!-- Pole -->
+    <string name="dtr">DTR</string>
+    <string name="pole_data">Add Pole Data</string>
+    <string name="pole_uscno_check">Enter details by DTR/Pole/USCNO</string>
+    <string name="pole_no">Pole No</string>
+    <string name="dtr_lat">Latitude</string>
+    <string name="dtr_long">Longitude</string>
+    <string name="pole_name">Pole Name</string>
+    <string name="display_pole_add">Pole</string>
+    <string name="display_dtr_data">DTR</string>
+    <string name="display_service_no_add">USCNO</string>
+    <string name="add_pole_data">Add Pole Data</string>
+    <string name="section_code">Section Code</string>
+    <!--    CT METERS-->
+    <string name="ct_meters">CT METERS</string>
+    <string name="name_ss">Name of SS</string>
+    <string name="name_feeders">Name of Feeders</string>
+    <string name="name_dtr">Name of DTR</string>
+    <string name="meter_sl_no">Meter SL.No</string>
+    <string name="purpose">Purpose</string>
+    <string name="meter_model">Model</string>
+    <string name="meter_ct_ratio">Meter CT Ratio</string>
+    <string name="meter_accuracy_class">Accuracy Class</string>
+    <string name="meter_mf_m_y">Manufacturing Month and Year</string>
+    <string name="ctmeter_img">Take Photo of CT Meter</string>
+    <string name="no_digits">No of Digits (Pre Decimal)</string>
+    <string name="po_no">PO Number</string>
+    <!--Meter Model Names-->
+    <string-array name="model">
+        <item>--Select--</item>
+        <item>DLMS</item>
+        <item>Non-DLMS</item>
+    </string-array>
+    <!--Type-->
+    <string-array name="type">
+        <item>--Select--</item>
+        <item>IRDA</item>
+        <item>Non-IRDA</item>
+    </string-array>
+    <!--Accuracy Class-->
+    <string-array name="accuracy_class">
+        <item>--Select--</item>
+        <item>0.5</item>
+        <item>0.5S</item>
+    </string-array>
+    <!--M.C.T ratio-->
+    <string-array name="ratio">
+        <item>--Select--</item>
+        <item>50/5</item>
+        <item>75/5</item>
+        <item>100/5</item>
+        <item>125/5</item>
+        <item>200/5</item>
+    </string-array>
+    <!--Service Type-->
+    <string-array name="ctm_service_type">
+        <item>--Select--</item>
+        <item>Solar</item>
+        <item>Non Solar</item>
+    </string-array>
+    <!--    Meter Make Array Strings-->
+    <string-array name="ctmeter_make">
+        <item>--Select--</item>
+        <item>HPL</item>
+        <item>Genus</item>
+        <item>Avon</item>
+        <item>Secure</item>
+        <item>L + G</item>
+        <item>L &amp; T</item>
+        <item>Elster</item>
+        <item>TTL</item>
+        <item>UTL</item>
+        <item>Duke Arnics</item>
+    </string-array>
+
+    <!--    New connection relase string-->
+    <string name="meter_body">Meter Body</string>
+    <string name="meter_terminal_cover">*TC Seal</string>
+    <string name="meter_board">Meter Board</string>
+    <string name="meter_mri">MRI</string>
+    <string name="meter_ttb">TTB</string>
+    <string name="meter_ctbox">CT Box</string>
+    <string name="meter_box">Meter Box</string>
+    <string name="meter_box_seal">Box Seal</string>
+    <string name="meter_md_reset">MD Reset</string>
+    <string name="get_meter_details">GET METER DETAILS</string>
+    <string name="get_meter_dc">GET DEVICE CATEGORY DESCRIPTION</string>
+    <string name="get_meter_dcd">DEVICE CATEGORY</string>
+    <string name="meter_cover_seals_mandatory">* Seals are mandatory</string>
+    <string name="reading_rmd">RMD</string>
+    <string name="reading_kvahlag">KVAH-LAG</string>
+    <string name="reading_kvahlead">KVAH-LEAD</string>
+    <string name="reading_vr">VR</string>
+    <string name="reading_vy">VY</string>
+    <string name="reading_vb">VB</string>
+    <string name="reading_ir">IR</string>
+    <string name="reading_iy">IY</string>
+    <string name="reading_ib">IB</string>
+    <string name="apk_download">Downloading APK</string>
+    <string name="meter_req_list">METER CHANGE REQUEST LIST</string>
+</resources>

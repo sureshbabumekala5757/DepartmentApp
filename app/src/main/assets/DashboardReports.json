@@ -1,0 +1,501 @@
+{
+  "AEEOPN": [
+    {
+      "title": "DTR Tracking \n",
+      "imageUrl": "transformer"
+    },
+    {
+      "title": "DTR Tracking Photos Upload",
+      "imageUrl": "transformer"
+    },
+    {
+      "title": "CCC \n Complaints",
+      "imageUrl": "complaints_book"
+    },
+    {
+      "title": "New Connection \n Release",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "Meter Change Requests",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Sub-Station Co-ordinates",
+      "imageUrl": "sub_station"
+    },
+    {
+      "title": "Check Reading \n",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    },
+    {
+      "title": "Feeder Outages \n",
+      "imageUrl": "ic_outage"
+    },
+    {
+      "title": "MATS DC Operations",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "DC-List Tracking \n",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "OMS \n",
+      "imageUrl": "ic_oms"
+    },
+    {
+      "title": "AGL Services GEO Tagging",
+      "imageUrl": "geo_tagging"
+    },
+    {
+      "title": "Add Pole Data \n",
+      "imageUrl": "icon_lc"
+    },
+    {
+      "title": "CT METERS \n",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Meter Seals Update \n",
+      "imageUrl": "electric_meter"
+    }
+  ],
+  "SS": [
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    },
+    {
+      "title": "Feeder Operations \n",
+      "imageUrl": "ic_feeder"
+    }
+  ],
+  "AE": [
+    {
+      "title": "DTR Tracking \n",
+      "imageUrl": "transformer"
+    },
+    {
+      "title": "DTR Tracking Photos Upload",
+      "imageUrl": "transformer"
+    },
+    {
+      "title": "CCC \n Complaints",
+      "imageUrl": "complaints_book"
+    },
+    {
+      "title": "New Connection \n Release",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "Meter Change Requests",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "AGL Services GEO Tagging",
+      "imageUrl": "geo_tagging"
+    },
+    {
+      "title": "Check Reading \n",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    },
+    {
+      "title": "Sub-Station Co-ordinates",
+      "imageUrl": "sub_station"
+    },
+    {
+      "title": "Feeder Outages \n",
+      "imageUrl": "ic_outage"
+    },
+    {
+      "title": "DC-List Tracking \n",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "OMS \n",
+      "imageUrl": "ic_oms"
+    },
+    {
+      "title": "Add Pole Data \n",
+      "imageUrl": "icon_lc"
+    },
+    {
+      "title": "CT METERS \n",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Meter Seals Update \n",
+      "imageUrl": "electric_meter"
+    }
+  ],
+  "SS": [
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    },
+    {
+      "title": "Feeder Operations \n",
+      "imageUrl": "ic_feeder"
+    }
+  ],
+  "ALM": [
+    {
+      "title": "DC Operations \n",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "Meter Change Requests \n",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Consumer Mobile \n Updation ",
+      "imageUrl": "smartphone"
+    },
+    {
+      "title": "Check Reading \n",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "New Connection \n Release",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "CCC Complaints \n",
+      "imageUrl": "complaints_book"
+    },
+    {
+      "title": "AGL Services GEO \n Tagging ",
+      "imageUrl": "geo_tagging"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    },
+    {
+      "title": "New Connections To \n Be Released",
+      "imageUrl": "ic_new_meter"
+    },
+    {
+      "title": "Feeder Outages\n",
+      "imageUrl": "ic_outage"
+    },
+    {
+      "title": "MATS \n DC Operations",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "Interruptions Report \n",
+      "imageUrl": "ic_interrupt"
+    },
+    {
+      "title": "Meter Seals Update \n",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Add Pole Data \n",
+      "imageUrl": "icon_lc"
+    },
+    {
+      "title": "CT Meters \n",
+      "imageUrl": "electric_meter"
+    }
+  ],
+  "JLM": [
+    {
+      "title": "DC Operations \n",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "Meter Change Requests \n",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Consumer Mobile \n Updation ",
+      "imageUrl": "smartphone"
+    },
+    {
+      "title": "Check Reading \n",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "New Connection \n Release",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "CCC Complaints \n",
+      "imageUrl": "complaints_book"
+    },
+    {
+      "title": "AGL Services GEO \n Tagging ",
+      "imageUrl": "geo_tagging"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    },
+    {
+      "title": "New Connections To \n Be Released",
+      "imageUrl": "ic_new_meter"
+    },
+    {
+      "title": "Feeder Outages\n",
+      "imageUrl": "ic_outage"
+    },
+    {
+      "title": "MATS \n DC Operations",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "Interruptions Report \n",
+      "imageUrl": "ic_interrupt"
+    },
+    {
+      "title": "Meter Seals Update \n",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Add Pole Data \n",
+      "imageUrl": "icon_lc"
+    },
+    {
+      "title": "CT Meters \n",
+      "imageUrl": "electric_meter"
+    }
+  ],
+  "LM": [
+    {
+      "title": "DC \n Operations",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "Re-Connection \n",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Meter Change Requests",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Check Reading \n",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "New Connection \n Release",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "CCC \n Complaints",
+      "imageUrl": "complaints_book"
+    },
+    {
+      "title": "AGL Services GEO Tagging",
+      "imageUrl": "geo_tagging"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    }
+  ],
+  "LMOPN": [
+    {
+      "title": "DC \n Operations",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "Meter Change Requests",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Check Reading \n",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "New Connection \n Release",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "CCC \n Complaints",
+      "imageUrl": "complaints_book"
+    },
+    {
+      "title": "AGL Services GEO Tagging",
+      "imageUrl": "geo_tagging"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    }
+  ],
+  "ADEOPN": [
+    {
+      "title": "DTR Tracking \n",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "DTR Complaints \n Photos Upload",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "PMI \n",
+
+      "imageUrl": "smartphone"
+    },
+    {
+      "title": "DC-List \n Tracking ",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "Check Reading",
+      "imageUrl": "ic_receipt"
+    }
+  ],
+  "AAO": [
+    {
+      "title": "Collections \n",
+      "imageUrl": "ic_collections"
+    },
+    {
+      "title": "Billings \n",
+      "imageUrl": "ic_billing"
+    },
+    {
+      "title": "DC-List \n Tracking ",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "Check Reading",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    }
+  ],
+  "DEOPN": [
+    {
+      "title": "Check Reading",
+      "imageUrl": "ic_receipt"
+    }
+  ],
+  "AEELT": [
+    {
+      "title": "New Connection \n Release",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "Meter Change Requests",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Check Reading \n",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    }
+  ],
+  "EA": [
+    {
+      "title": "DC \n Operations",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "Meter Change Requests",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Re-Connection \n",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Check Reading \n",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "New Connection \n Release",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "CCC \n Complaints",
+      "imageUrl": "complaints_book"
+    },
+    {
+      "title": "AGL Services GEO Tagging",
+      "imageUrl": "geo_tagging"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    }
+  ],
+  "ALM": [
+    {
+      "title": "DC \n Operations",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "Meter Change Requests",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Check Reading \n",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "New Connection \n Release",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "CCC \n Complaints",
+      "imageUrl": "complaints_book"
+    },
+    {
+      "title": "AGL Services GEO Tagging",
+      "imageUrl": "geo_tagging"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    }
+  ],
+  "LI": [
+    {
+      "title": "DC \n Operations",
+      "imageUrl": "disconnected"
+    },
+    {
+      "title": "Meter Change Requests",
+      "imageUrl": "electric_meter"
+    },
+    {
+      "title": "Check Reading \n",
+      "imageUrl": "ic_receipt"
+    },
+    {
+      "title": "New Connection \n Release",
+      "imageUrl": "ic_meter"
+    },
+    {
+      "title": "CCC \n Complaints",
+      "imageUrl": "complaints_book"
+    },
+    {
+      "title": "AGL Services GEO Tagging",
+      "imageUrl": "geo_tagging"
+    },
+    {
+      "title": "Service Details \n",
+      "imageUrl": "service_details"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/table_row_bg"
+            android:paddingTop="1dp">
+
+            <TextView
+                android:id="@+id/cmuscnotxt"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/statustext"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/datetxt"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

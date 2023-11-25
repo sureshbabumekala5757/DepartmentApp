@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:weightSum="1.2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Achievers Gallery"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_17sp"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_25dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/ic_next"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical|end"/>
+
+
+    </LinearLayout>
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp"/>
+  <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_celebration"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:weightSum="1.2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Achievers"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_17sp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_20dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/ic_next"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|end"
+                android:gravity="center_vertical|end"/>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_20dp"
+            android:layout_below="@id/ll_header">
+
+            <ImageView
+                android:id="@+id/iv_achievers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <ProgressBar
+                android:id="@+id/homeprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+    </RelativeLayout>-->
+</LinearLayout>

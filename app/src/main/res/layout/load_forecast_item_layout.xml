@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_five"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60dp"
+        android:layout_gravity="center"
+        android:background="@color/achievers_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4.5">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_serial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="SI.No"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.3"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_nature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_consumption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_consumption_prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@android:color/white" />
+</LinearLayout>

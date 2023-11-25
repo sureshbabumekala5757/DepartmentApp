@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_row_bg">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/table_cell_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/F_sl_no_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="SL.NO"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/table_cell_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/F_feedername_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="@string/feedername"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/F_saifi_no_s_txt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:text="@string/saifi_no_s"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/F_saidi_hh_mm_ss_txt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/saidi_hh_mm_ss"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"/>
+
+            <!-- <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:background="@drawable/table_cell_bg"
+                 android:gravity="center"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/F_saidi_sec_s_txt"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:ellipsize="end"
+                     android:maxLines="2"
+                     android:paddingTop="15dp"
+                     android:text="@string/saidi_sec_s"
+                     android:textAlignment="center"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="13sp"
+                     android:textStyle="bold" />
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/_1dp"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginBottom="10dp"
+                     android:background="@color/colorPrimary" />
+
+                 <TextView
+                     android:id="@+id/F_saidi_hh_mm_ss_txt"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:ellipsize="end"
+                     android:maxLines="2"
+                     android:text="@string/saidi_hh_mm_ss"
+                     android:paddingBottom="5dp"
+                     android:textAlignment="center"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="13sp"
+                     android:textStyle="bold" />
+             </LinearLayout>-->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/rank"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

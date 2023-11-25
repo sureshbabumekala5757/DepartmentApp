@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_20dp">
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:minHeight="@dimen/_35dp"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15sp" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Load Entry"
+        android:padding="@dimen/_5dp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:textSize="@dimen/_16sp" />
+    <LinearLayout
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/_40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="@string/time_period"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="@string/consumption_in_kwh"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/sv_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_ok"
+        android:layout_below="@id/txt_heading">
+
+        <LinearLayout
+            android:id="@+id/ll_load"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_16sp" />
+    </ScrollView>
+</RelativeLayout>

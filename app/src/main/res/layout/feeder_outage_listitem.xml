@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:orientation="vertical">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="5.1"
+            android:background="@drawable/table_row_bg"
+            android:paddingTop="1dp">
+
+            <TextView
+                android:id="@+id/tv_ss_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/_50dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_feeder_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/_50dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:layout_weight="0.9"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_meter_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/_50dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:layout_weight="0.7"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_occur"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/_50dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:layout_weight="0.9"
+                android:ellipsize="end"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <Chronometer
+                android:id="@+id/tv_duration"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/_50dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:layout_weight="0.9"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/_50dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:layout_weight="0.6"
+                android:ellipsize="end"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

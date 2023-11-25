@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/tableHeadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_row_bg"
+            android:paddingTop="1dp"
+            android:paddingRight="1dp">
+
+            <TextView
+                android:id="@+id/eeps_regnum"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45dp"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:layout_weight="1.5"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/eeps_servicenum"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/eeps_servicename"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/eeps_status"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45dp"
+                android:layout_weight="0.75"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/eeps_load"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/eeps_village"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/eeps_feeder"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/eeps_substation"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/eeps_remarks"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45dp"
+                android:layout_weight="1"
+                android:background="@drawable/table_cell_bg"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
+

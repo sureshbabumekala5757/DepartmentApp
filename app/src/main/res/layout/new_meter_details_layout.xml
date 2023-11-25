@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_new_meter_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--New Meter SL No-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/new_meter_no"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+<!--        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "-->
+        <EditText
+            android:id="@+id/et_new_meter_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:maxLength="18"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_get_new_meter_details"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_5dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/get_meter_details"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+    <!--New Meter Make-->
+    <LinearLayout
+        android:id="@+id/ll_new_meter_make"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/meter_make"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_meter_make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/spn_meter_make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_spinner"
+            android:fontFamily="sans-serif-light"
+            android:minHeight="@dimen/_40dp"
+            android:spinnerMode="dialog"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_new_meter_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/meter_type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_meter_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:text=""
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/spn_meter_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_spinner"
+            android:fontFamily="sans-serif-light"
+            android:minHeight="@dimen/_40dp"
+            android:spinnerMode="dialog"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_new_meter_phase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/meter_phase"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/et_meter_phase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/spn_meter_phase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_spinner"
+            android:fontFamily="sans-serif-light"
+            android:minHeight="@dimen/_40dp"
+            android:spinnerMode="dialog"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/meter_class"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_meter_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789."
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/meter_capacity"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_meter_capacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789-/ "
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/meter_digits"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_meter_digits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/irda"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spn_irda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_spinner"
+            android:fontFamily="sans-serif-light"
+            android:minHeight="@dimen/_40dp"
+            android:spinnerMode="dialog"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/meter_mfg_date_in_ddmmyy_format_eg_100314"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_meter_mfg_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:fontFamily="sans-serif-light"
+            android:hint="dd-mm-yyyy"
+            android:imeOptions="actionNext"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/initial_reading_kwh"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_initial_reading_kwh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789."
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/initial_reading_kvah"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_initial_reading_kvah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789."
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_solar_initial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Initial Solar Reading"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_initial_solar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789."
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/mf"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_mf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789."
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <!--Start-->
+    <!--KWH-->
+    <LinearLayout
+        android:id="@+id/ll_new_meter_kwh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_new_meter_kwh"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="KWH"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_new_meter_kwh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-_ "
+            android:fontFamily="sans-serif-light"
+            android:hint="KWH"
+            android:imeOptions="actionNext"
+            android:maxLength="11"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+    <!--KVAH-->
+    <LinearLayout
+        android:id="@+id/ll_new_meter_kvah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_new_meter_kvah"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="KVAH"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_new_meter_kvah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-_ "
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="KVAH"
+            android:imeOptions="actionNext"
+            android:maxLength="11"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+    <!--Export KWH-->
+    <LinearLayout
+        android:id="@+id/ll_new_meter_ex_kwh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_new_meter_ex_kwh"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Export KWH"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_new_meter_ex_kwh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-_ "
+            android:fontFamily="sans-serif-light"
+            android:hint="Export KWH"
+            android:imeOptions="actionNext"
+            android:maxLength="11"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+    <!--Export KVAH-->
+    <LinearLayout
+        android:id="@+id/ll_new_meter_ex_kvah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_new_meter_ex_kvah"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Export KVAH"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_new_meter_ex_kvah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-_ "
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="Export KVAH"
+            android:imeOptions="actionNext"
+            android:maxLength="11"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+    <!-- RMD-->
+    <LinearLayout
+        android:id="@+id/ll_new_meter_rmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/reading_rmd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_new_meter_rmd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:inputType="numberDecimal"
+            android:minHeight="@dimen/_40dp"
+            android:hint="@string/reading_rmd"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+<!--    Lag and Lead-->
+    <LinearLayout
+        android:id="@+id/ll_new_meter_kava_lag_lead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/reading_kvahlag"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_8sdp"/>
+            <EditText
+                android:id="@+id/et_new_meter_kvah_lag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusedByDefault="true"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/reading_kvahlead"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_6sdp"/>
+            <EditText
+                android:id="@+id/ed_new_meter_kvah_lead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusedByDefault="true"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_new_meter_reading_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/reading_vr"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_6sdp"/>
+            <EditText
+                android:id="@+id/et_vr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusedByDefault="true"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_vy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/reading_vy" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_6sdp"/>
+            <EditText
+                android:id="@+id/et_vy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_vb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/reading_vb" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_6sdp"/>
+            <EditText
+                android:id="@+id/et_vb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_new_meter_reading_i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/reading_ir"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_6sdp"/>
+            <EditText
+                android:id="@+id/et_ir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusedByDefault="true"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_iy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/reading_iy" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_6sdp"/>
+            <EditText
+                android:id="@+id/et_iy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_ib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/reading_ib" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_6sdp"/>
+            <EditText
+                android:id="@+id/et_ib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--New Meter seals details-->
+    <LinearLayout
+        android:id="@+id/ll_new_meter_seals_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_40dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_ctmeter_cover_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:paddingBottom="@dimen/_5dp"
+                android:text="@string/meter_cover_seals_mandatory"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <!--Meter TC-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/meter_terminal_cover"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_new_meter_tc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:maxLength="20"
+                android:minHeight="@dimen/_40dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!--Meter Body-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/meter_body"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_new_meter_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:maxLength="30"
+                android:minHeight="@dimen/_40dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_new_meter_wo_tc_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+        <!--Meter Board-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/meter_board"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_new_meter_board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:maxLength="20"
+                android:minHeight="@dimen/_40dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!--Meter MRI-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/meter_mri"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_new_meter_mri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:maxLength="20"
+                android:minHeight="@dimen/_40dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!--Meter TTB-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/meter_ttb"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_new_meter_ttb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:maxLength="20"
+                android:minHeight="@dimen/_40dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!--Meter CT BOX-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/meter_ctbox"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_new_meter_ctbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:maxLength="20"
+                android:minHeight="@dimen/_40dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!--Meter CT BOX-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/meter_box"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_new_meter_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:maxLength="20"
+                android:minHeight="@dimen/_40dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!--Meter CT BOX Seal-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/meter_box_seal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_new_meter_box_seal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:maxLength="20"
+                android:minHeight="@dimen/_40dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!--Meter MD Reset-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/meter_box_seal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_new_meter_md_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:maxLength="20"
+                android:minHeight="@dimen/_40dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- End   -->
+
+    <TextView
+        android:id="@+id/tv_meter_cover_seals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5dp"
+        android:paddingBottom="@dimen/_5dp"
+        android:text="@string/meter_cover_seals_mrt_seals_are_mandatory"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_seal_one"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/seal_1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_seal_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-_ "
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:maxLength="20"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_seal_two"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text=" Seal 2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_seal_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-_ "
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:maxLength="20"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text=" Seal 3"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_seal_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-_ "
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:maxLength="20"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text=" Seal 4"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_seal_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-_ "
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:maxLength="20"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_tc_seal"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/meter_tc_seals"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_meter_tc_seals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-_ "
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionDone"
+            android:maxLength="20"
+            android:inputType="textNoSuggestions"
+            android:minHeight="@dimen/_40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <!-- New Meter image-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/meter_photo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/newMeter_iv"
+            android:layout_width="@dimen/_140dp"
+            android:layout_height="@dimen/_140dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="captureCTMImg1"
+            android:tag="NEWM"
+            android:padding="@dimen/_10dp"
+            android:rotation="90"
+            android:src="@drawable/border" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

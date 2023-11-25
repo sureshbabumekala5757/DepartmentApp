@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_20dp">
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_19dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:minHeight="@dimen/_35dp"
+        android:text="OK"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15sp" />
+
+    <com.apcpdcl.departmentapp.customviews.ZoomableImageView
+        android:id="@+id/iv_meter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_ok"
+        android:layout_marginTop="@dimen/_30dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:scaleType="matrix"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_16sp" />
+
+
+</RelativeLayout>

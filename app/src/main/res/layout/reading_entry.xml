@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textFeeder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feeder"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editKWH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5dp"
+        android:hint="Enter KWH value"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/editKVAH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5dp"
+        android:hint="Enter KVAH value"
+        android:inputType="number|numberDecimal" />
+</LinearLayout>

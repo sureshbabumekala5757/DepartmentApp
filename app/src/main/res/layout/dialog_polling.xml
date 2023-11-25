@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Polling"
+        android:visibility="visible"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_16sp" />
+
+    <TextView
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_16sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rb_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="YES"
+            android:textColor="@color/text_color"
+            android:textColorHighlight="@color/colorPrimary" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="NO"
+            android:textColor="@color/text_color"
+            android:textColorHighlight="@color/colorPrimary" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_result"
+        android:visibility="gone"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:gravity="center_vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="YES"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_yes"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.1"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_style_poll_yes" />
+
+            <TextView
+                android:id="@+id/tv_yes_result"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sp"  />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:gravity="center_vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="NO"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_no"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.1"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_style_poll" />
+
+            <TextView
+                android:id="@+id/tv_no_result"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sp"  />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_19dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:minHeight="@dimen/_35dp"
+        android:text="Done"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15sp" />
+
+</LinearLayout>

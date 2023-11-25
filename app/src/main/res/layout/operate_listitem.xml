@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:orientation="vertical">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tb_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/table_row_bg"
+            android:paddingTop="1dp">
+
+            <TextView
+                android:id="@+id/serialnumtxt"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cmuscnotxt"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cmcnametext"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/totaltxt"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:layout_weight="0.7"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cmcattxt"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:background="@drawable/table_cell_bg"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_weight="0.5"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
